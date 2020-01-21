@@ -1,0 +1,281 @@
+.content-upper {
+  background-color: #1c1c1c;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  @media screen and (max-width: 992px){
+    padding-bottom: 30px;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 10px;
+    border-top: 2px dashed #414141
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 10px;
+    border-top: 2px dashed #414141
+  }
+
+  .card {
+    position: relative;
+    padding: 0;
+    border: none;
+    margin: 0;
+    background: none;
+    
+    .card-content {
+      .card-header{
+        font-size: 13px;
+        font-family: "Helvetica";
+        color: rgb(241, 238, 229);
+        font-weight: bold;
+        text-align: left;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+        padding: 0;
+        margin-bottom: 10px;
+      }
+      .card-text {
+        font-size: 12px;
+        font-family: "Helvetica";
+        color: rgb(151, 151, 151);
+        text-align: left;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    &.small-card {
+      &::before {
+        content: url('../../media/card-icon.png');
+        position: absolute;
+        width: 29px;
+        height: 29px;
+        top: -10px;
+        left: -10px;
+        z-index: 1100;
+      }
+      .card-image {
+        width: 63px;
+        height: 63px;
+      }
+     
+    }
+    &.big-card {
+        .card-content {
+          margin-bottom: 15px;
+        }
+        .btn {
+        background-image: linear-gradient(#f3e4ae, #e0bf49);
+        width: calc(50% - 4px);
+        font-size: 14px;
+        font-family: "Georgia";
+        color: rgb(37, 37, 37);
+        font-style: italic;
+        text-align: center;
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+        border: 1px solid transparent;
+        border-radius: 20px;
+        &:hover {
+          background-image: linear-gradient(#e0bf49, #f3e4ae);
+        }
+      }
+    }
+
+  }
+}
+.content-bottom {
+  background-color: #f8f6f1;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    border-top: 10px solid #e8e5dc
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    border-top: 10px solid #e8e5dc
+  }
+  .content-info {
+    h5 {
+      width: 100%;
+      font-size: 14px;
+      font-family: "Helvetica";
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 12px;
+      font-family: "Helvetica";
+      color: rgb(68, 68, 68);
+      text-align: left;
+      margin-bottom: 15px;
+    }
+    .content-desc {
+      font-size: 11px;
+      font-family: "Georgia";
+      color: rgb(136, 136, 136);
+      font-style: italic;
+      text-align: center;
+      background-color: #ece9e2;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      padding: 5px;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+    .screenshot {
+      width: 100%;
+    }
+  }
+  .content-callout {
+    background-color: #fcfcfc;
+    border: 1px solid #dbd8d1;
+    border-radius: 5px;
+    padding: 20px 30px 15px 20px;
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 20px;
+      font-family: "Georgia";
+      color: rgb(68, 68, 68);
+      font-style: italic;
+      text-align: left;
+      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+    }
+    p {
+      font-size: 12px;
+      font-family: "Helvetica";
+      color: rgb(68, 68, 68);
+      text-align: left;
+    }
+    .btn {
+      background-image: linear-gradient(#f2e3ad, #e1c049);
+      font-size: 14px;
+      font-family: "Georgia";
+      color: rgb(37, 37, 37);
+      font-style: italic;
+      text-align: center;
+      text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8);
+      padding: 15px;
+      border: 1px solid transparent;
+      border-radius: 30px;
+      box-shadow: -3px -3px 0px #eeeeee, 3px 3px 0px #eeeeee,3px -3px 0px #eeeeee,-3px 3px 0px #eeeeee ;
+      &:hover {
+        background-image: linear-gradient(#e1c049, #f2e3ad);
+      }
+    }
+  }
+  .content-reviews {
+    h4 {
+      font-size: 14px;
+      font-family: "Helvetica";
+      color: rgb(51, 51, 51);
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+    .card {
+      position: relative;
+      border: none;
+      background: none;
+      min-height: 80px;
+      padding-right: 20px;
+      margin-bottom: 30px;
+      @media screen and (max-width: 992px){
+        min-height: 0;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        width: calc(100% - 20px);
+        height: 2px;
+        background-image: linear-gradient(#e4e1d9, #fefdfd);
+      }
+      h5 {
+        font-size: 12px;
+        font-family: "Helvetica";
+        color: rgb(68, 68, 68);
+        font-weight: bold;
+      }
+      h6 {
+        font-size: 12px;
+        font-family: "Helvetica";
+        color: rgb(68, 68, 68);
+      }
+      
+      p {
+        font-size: 12px;
+        font-family: "Helvetica";
+        color: rgb(68, 68, 68);
+        text-align: left;
+        margin-bottom: 10px;
+      }        
+      img {
+        width: 51px;
+        height: 51px;
+      }
+      .additional-text {
+        font-size: 11px;
+        font-family: "Georgia";
+        color: rgba(136, 136, 136, 0.8);
+        font-style: italic;
+      }
+      .twitter-text {
+        font-size: 12px;
+        font-family: "Helvetica";
+        color: rgb(85, 151, 178);
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      &.big-card {
+        min-height: 180px;
+        @media screen and (max-width: 992px){
+          min-height: 0;
+        }
+        &::after {
+          content: none;
+        }
+        .additional-text {
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 12px;
+          font-family: "Georgia";
+          color: rgba(68, 68, 68, 0.8);
+          font-style: italic;
+          line-height: 1.667;
+          letter-spacing: 0.3px;
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+

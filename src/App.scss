@@ -1,0 +1,84 @@
+.container {
+  max-width: 960px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+.container, .container-fluid{
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width:960px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.col-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {
+  padding-left: 10px;
+  padding-right: 10px;
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  [class*='col-sm'] {
+    padding-left: 10px;
+    padding-right: 10px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  [class*='col-md'] {
+    padding-left: 10px;
+    padding-right: 10px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  [class*='col-lg'] {
+    padding-left: 10px;
+    padding-right: 10px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  [class*='col-xl'] {
+    padding-left: 10px;
+    padding-right: 10px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
